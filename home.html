@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MP Tourism</title>
+  
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<style>
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+.a1
+{
+  position: relative;
+  padding: 25px 30px;
+  margin: 0 20px;
+  overflow: hidden;
+
+}
+.a1:hover
+{
+  background:  #c64d2b;
+  color: #050801;
+  border-radius: 10px;
+
+     
+}
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .headtext {
+    color: #180d0d;
+    font-size: 25px;
+    position: absolute;
+    top: 108px;
+    width: 400px;
+    text-align: right;
+    margin-left: 650px;
+    
+  }
+  .text {
+    color: #482a2a;
+    font-size: 15px;
+    position: absolute;
+    bottom: 108px;
+    width: 200px;
+    text-align: right;
+    margin-left: 850px;
+    
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+
+  .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text1 {
+  background-color: #0d1915;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 10px;
+  border-color: aqua;
+  border-width: 5px;
+}
+.grad1 {
+  margin-left: 200px;
+  width: 800px;
+  height: 100px;
+  border-radius: 10px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: rgb(59, 118, 68); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, rgb(131, 243, 243), rgb(10, 52, 17))
+}
+
+.x {
+  margin-left: 300px;
+  width: 700px;
+  height: 80px;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(235, 199, 199);
+  animation-name: example_1 ;
+  animation-duration: 4s;
+  animation-iteration-count: 10;
+  text-align: center;
+ 
+}
+
+@keyframes example_1 {
+  from {background-color: rgb(249, 197, 176);
+  color:#0d1915}
+  to {background-color: rgb(7, 7, 5);
+  color:aliceblue;}
+}
+.div_x {
+  width: 800px;
+  height: 200px;
+  border-radius: 10px;
+  animation-name: example_2 ;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  transition: width 2s, height 2s;
+  text-align: center;
+  font-size: 0px;
+}
+
+@keyframes example_2 {
+  from {font-size:15px;
+  color:#0d1915}
+  to {background-color: rgb(7, 7, 5);font-size:75px;
+  color:rgb(243, 228, 229)}
+}
+
+.div_y {
+  width: 100%;
+  height: 100px;
+  
+  animation-name: exampley ;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  transition: width 2s, height 2s;
+  text-align: center;
+  font-size: 20px;
+}
+
+@keyframes exampley {
+  from {font-size:15px;
+  color:#180d0d;}
+  to {background-color: #180d0d;;font-size:20px;
+  color:rgb(243, 228, 229)}
+}
+
+  </style>
+<body style="background-color:rgb(236, 255, 224);">
+ 
+ <div><div>
+ 
+    <video width="100%" height="750"controls  autoplay muted>
+      
+      <source src="mptourism.mp4" type="video/mp4"></video>
+
+<img style="position:absolute;top:70px;left:100px;z-index:1;width:10%;height:25%;" src="https://www.mptourism.com/images/logo.png">
+<div >
+  <a href="http://127.0.0.1:5500/covid.html" style="background-color: #400505;color:antiquewhite;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align:center;margin-right: 20px;padding-top: 10px;position:absolute;top:175px;right:10px;height:100px;width:500px;opacity: 0.8;font-size: 30px;"><u>COVID-19 NOTIFICATIONS</u></a>
+  <h3 style="background-color: #400505;color:antiquewhite;font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align:center;margin-right: 20px;position:absolute;top:245px;right:10px;height:60px;width:500px;opacity: 0.5;font-size:20px;"><u>Guidelines for Travel and Tourism</u></h3>
+  <h1 class="div_x"  style="text-align:center;font-family:'eb_garamondregular';position:absolute;left:210px;top:275px;" >Welcome to<br> Madhya  Pradesh</h1>
+  
+  <a  class="a1" style="position:absolute;top:35px;right:525px;z-index:1;color:aliceblue;font-size: 15px;" href="#explore">EXPLORE</a>
+<a class="a1" style="position:absolute;top:35px;right:385px;z-index:1;color:aliceblue;font-size: 15px;" href="#experience"> EXPERIENCES</a>       
+ <a class="a1" style="position:absolute;top:35px;right:225px;z-index:1;color:aliceblue;font-size: 15px;" href="http://127.0.0.1:5500/booking.html">PLAN YOUR TRIP</a>
+ <a class="a1" style="position:absolute;top:35px;right:135px;z-index:1;color:aliceblue;font-size: 15px;"href="#ourstories">BLOGS</a>
+ <a class="a1" style="position:absolute;top:35px;right:25px;z-index:1;color:aliceblue;font-size: 15px;"href="#search">SEARCH</a>
+</div>
+    <div  id="search" style="background-repeat:no-repeat;background-size:cover;background-image:url('pexels-lumn-296849.jpg');height:1100px;margin-top: 0px;">
+<br><br><br><br><br>
+
+    <div class="container">
+        <img  src="https://www.mptourism.com/images/Destinations.jpg"  class="image" style="margin-left:170px;height:350px;width:500px;border-radius: 10px;margin-top:30px;">
+        <div class="middle">
+          <div class="text1" style ="margin-left: 225px;"><b>Destination</div>
+        </div>
+      </div>
+
+    <div class="container">
+        <img  src="https://www.mptourism.com/images/Events.jpg" class="image" style="margin-left:690px;height:300px;width:530px;border-radius: 10px;top:100px;margin-top: -210px;">
+        <div class="middle">
+          <div class="text1" style ="margin-left: 1300px;">CULTURE</div>
+        </div>
+      </div>
+
+    <div class="container">
+        <img  src="https://i.pinimg.com/474x/1f/01/c7/1f01c7c7e4b8d8e96490fbba7b940372.jpg" class="image" style="margin-left:270px;height:280px;width:400px;border-radius: 10px;margin-top:-80px;">
+        <div class="middle">
+          <div class="text1" style ="margin-left: 285px;">CAMPS</div>
+        </div>
+      </div>
+
+    <div class="container">
+        <img  src="https://tse3.mm.bing.net/th?id=OIP.TUxrfojxWXgpW55P0KITawHaEo&pid=Api&P=0&w=316&h=197" class="image"  style="margin-left:690px;height:350px;width:300px;border-radius: 10px;margin-top:-180px;">
+        <div class="middle">
+          <div class="text1" style ="margin-left: 1050px;">TOUR TOOL</b></div>
+        </div>
+      </div>
+
+</div>
+      
+
+      </div>
+      <h1 class =grad1 style="text-align: center;margin-top: 40px;background-color: black;color: aliceblue;border-radius: 10px;font-size: 35px;" id="explore">REASONS TO EXPLORE MADHYA PRADESH</h1>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src=" https://www.mptourism.com/images/reason_3.png" style="width:100%;margin-left: -130px;">
+          <div class="headtext"><b>Rich Forest Cover and<br> Natural Beauty</b></div>
+          <div class="text"><b>With plentiful of places to satisfy your love for landscape and beauty,the state certainly captures a piece of your heart for all the beauty that lies in here.</b></div>        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="https://www.mptourism.com/images/reason_2.png" style="width:100%;margin-left: -130px;">
+          <div class="headtext"><b>11 National Parks,<br>24 Wildlife Sanctuaries <br>and 6 Tiger Reserves</b></div>
+          <div class="text"><b>Plan a trip to Madhya Pradesh to experience the true spirit of the jungles and catch all the live action happening in the wild.</b></div>        </div>
+        
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://www.mptourism.com/images/reason_4.png" style="width:100%;">
+          <div class="headtext"><b>Two Jyotirlingas <br>out of 12</b></div>
+          <div class="text"><b> Mahakaleshwar Temple in Ujjain and Omkareshwar are 2 most revered places in Madhya Pradesh.</b></div>
+        </div>
+       
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://www.mptourism.com/images/reason_1.png" style="width:100%;margin-left: -130px;">
+          <div class="headtext"><b>Three UNESCO <br>World Heritages Sites</b></div>
+          <div class="text"><b>Home to 3 UNESCO World Heritage Sites namely Sanchi,Bhimbhetka &Khajuraho,Madhya Pradesh attracts tourists from across the globe</b></div>        </div>
+        </div>
+
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+      </div>
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+    </div>
+  <div style="background-color:white" >
+
+
+    <br><br><br>
+    
+    <h1 class="x" style = "margin-top: 10px;padding-top: 20px;text-align: center;font-size: 35px;" id="experience">Sightseeings in Madhya Pradesh</h1>
+    
+<div><br><br>
+      <video width="520" height="300" style="border-radius: 40px;border-style:none;margin-left:70px;" autoplay controls muted>
+        <source src="Kanha and Pench National Parks _ Madhya Pradesh.mp4" type="video/mp4">
+       
+      </video>
+      <img src="https://i.pinimg.com/474x/1c/87/cc/1c87cc40c467b6708292df5460321c93.jpg" style="border-radius: 40px;border-style:none;margin-top: -400px;margin-left:600px;height:300px;width:600px;">
+
+<h1  style="margin-top: -280px;margin-left:695px;height:300px;width:600px;color:#400505;font-size: 35px;">DELIGHTFUL KANHA</h1>  
+<h2 style="margin-top: -250px;margin-left:650px;height:300px;width:600px;"><ul><li>The largest national park in Madhya Pradesh with 940 sq. Km under it is Considered to be one of the best administered parks in Asia</li><li>Has a significant population of royal Bengal Tigers</li><li>Bamni Dadar offers a spectacular view of the setting sun and the dense forest of Kanha</li></ul></h2> 
+ </div>
+
+
+    
+<div>
+      <video width="520" height="300" style="border-radius: 40px;border-style: none;margin-left:650px;" autoplay controls muted>
+        <source src="Sanchi Stupa Holy Centre of Buddhism _ Madhya Pradesh Tourism _ Sanchi _ Raisen _ Bhopal.mp4" type="video/mp4">
+       
+      </video>
+      <img src="https://i.pinimg.com/474x/1c/87/cc/1c87cc40c467b6708292df5460321c93.jpg" style="border-radius: 40px;border-style:none;margin-top: -350px;margin-left:50px;height:300px;width:600px;">
+
+      <h1 style="margin-top: -250px;margin-left:100px;height:300px;width:600px;color:#400505;font-size: 35px;">SACRED SANCHI</h1>  
+      <h2 style="margin-top: -250px;margin-left:50px;height:300px;width:600px;">
+      <ul><li>Unesco world heritage site 'Mahastupa' (great stupa) stands here</li><li>Home to the gupta temple, one of the earliest examples of temple architecture</li><li>The Lion Capital of Ashokan Pillar can be found at The Archeological Museum</li></ul></h2>    </div>
+
+
+<div>
+    <video width="520" height="300" style="border-radius: 40px;border-style:none;margin-left:70px;" autoplay controls muted>
+      <source src="Orchha - Madhya Pradesh Tourism.mp4" type="video/mp4">
+     
+    </video>
+    <img src="https://i.pinimg.com/474x/1c/87/cc/1c87cc40c467b6708292df5460321c93.jpg" style="border-radius: 40px;border-style:none;margin-top: -400px;margin-left:600px;height:300px;width:600px;">
+  <h1 style="margin-top: -300px;margin-left:640px;height:300px;width:600px;color:#400505;font-size: 35px;">MAJESTIC ORCHHA</h1>
+    <h2 style="margin-top: -250px;margin-left:650px;height:300px;width:600px;"><ul><li>Orchha was founded in the 16th century by bundela rajput chief, rudra pratap</li>
+    <li> The laxmi narayan temple exhibits a unique architectural style, which is a mix of a fort and a temple</li>
+    <li>The famed chhatris of orchha are cenotaphs that were constructed in honour of its erstwhile rulers</li></ul></h2>
+</div>
+
+    
+<div>
+      <video width="520" height="300" style="border-radius: 40px;border-style: none;margin-left:650px;" autoplay controls muted>
+        <source src="Ujjain & Omakreshwar-The Divine Destinations of MP.mp4" type="video/mp4">
+       
+      </video>
+      <img src="https://i.pinimg.com/474x/1c/87/cc/1c87cc40c467b6708292df5460321c93.jpg" style="border-radius: 40px;border-style:none;margin-top: -350px;margin-left:50px;height:300px;width:600px;">
+
+<h1 style="margin-top: -250px;margin-left:90px;height:300px;width:600px;color:#400505;font-size: 35px;">ANCIENT CITY UJJAIN</h1>  
+<h2 style="margin-top: -250px;margin-left:50px;height:300px;width:600px;">
+<ul><li>Known as the temple city for its numerous temples from different eras, and the major attraction is Mahakaleshwar Jyotirlinga</li><li>The world's largest religious gathering, Simhastha (Kumbha Mela), is held on the banks of the Shipra river once in every 12 years</li><li>Ujjain is considered the greenwich of india, with the first meridian of longitude passing through it</li></ul></h2>  </div>
+
+  
+<div>
+  <video width="520" height="300" style="border-radius: 40px;border-style:none;margin-bottom: 40px;margin-left:30px;" autoplay controls muted>
+    <source src="Marble Rocks, Dhuandhar Falls _ BHEDAGHAT, JABALPUR.mp4" type="video/mp4">
+   
+  </video>
+  <img src="https://i.pinimg.com/474x/1c/87/cc/1c87cc40c467b6708292df5460321c93.jpg" style="border-radius: 40px;border-style:none;margin-top: -400px;margin-left:600px;height:300px;width:600px;">
+<h1 style="margin-top: -300px;margin-left:640px;height:300px;width:600px;color:#400505;font-size: 35px;">BREATHTAKING BHEDAGHAT</h1>
+<h2 style="margin-top: -250px;margin-left:600px;height:300px;width:600px;"><ul><li>Treat yourself with a boat ride on a moonlit night at the marble rocks</li>
+  <li>At "bandar kudni", the marble mountains come close enough to let a monkey jump across</li>
+  <li>Egg shells of dinosaurs have been found at a number of ghats in the region</li>
+  <li>Visit the beautiful 10th century chaunsath yogini temple, dedicated to goddess durga</li></ul></h2>
+</div>
+
+  </div>
+  
+<div id="ourstories" class="div_y" style="background-color:#180d0d;">
+
+<h1 style="margin-left:320px;height:300px;width:600px;color:#e4d6d6;font-size: 55px;">Our Stories</h1>
+</div>
+<div style="background-color:#180d0d;"><br>
+  <div style="background-color:#f9fffa;margin-left:50px;width:350px;height:400px;border-radius: 10px;">
+  <img style="margin-left:10px;width:330px;height:200px;margin-top: 10px;" src="https://www.mptourism.com/web/image/catalog/homepageblog3.png">
+  <h1 style="margin-left:10px;width:330px;height:200px;margin-top: 15px;color:#3f3170">5 Cities to witness <br>Light and Sound shows</b></h1>
+  <h2 style="margin-left:10px;width:330px;height:200px;margin-top: -135px;color:#3f3170;font-family: calibri;">What better than witnessing the folklores with a sound and visual treat? Head to these six cities in the state and experience the mesmerising sound & light shows...</h2>
+  <h3  style="margin-left:10px;width:330px;height:200px;margin-top: -125px;color:#e91515"><u>Learn more</u></h3>
+ </div>
+
+  <div style="background-color:#f9fffa;margin-left:450px;width:350px;height:400px;margin-top: -400px;border-radius: 10px;">
+    <img style="margin-left:10px;width:330px;height:200px;margin-top: 10px;" src="https://www.mptourism.com/web/image/catalog/homepageblog1.png">
+    <h1 style="margin-left:10px;width:330px;height:200px;margin-top: 15px;color:#3f3170">Go Heritage Run in MP</h1>
+    <h2 style="margin-left:10px;width:330px;height:200px;margin-top: -165px;color:#3f3170;font-family: calibri;">Go Heritage Run, an award-winning fun run series is back in Madhya Pradesh with a schedule of three fun runs which you can look forward to running in Pachmarhi, Khajuraho, and Pench...</h2>
+    <h3  style="margin-left:10px;width:330px;height:200px;margin-top: -125px;color:#e91515"><u>Learn more</u></h3>
+  </div>
+
+  <div style="background-color:#f9fffa;margin-left:850px;width:350px;height:400px;margin-top: -400px;border-radius: 10px;">
+   <img style="margin-left:10px;width:330px;height:200px;margin-top: 10px;" src="https://www.mptourism.com/web/image/catalog/homepageblog4.png">
+   <h1 style="margin-left:10px;width:330px;height:200px;margin-top: 15px;color:#3f3170">Solo Travellers</h1>
+   <h2 style="margin-left:10px;width:330px;height:200px;margin-top: -165px;color:#3f3170;font-family: calibri;">Are you an independent girl/woman who loves to travel solo and explore places? If this relates to you then Madhya Pradesh has a treat in store for you...</h2>
+   <h3  style="margin-left:10px;width:330px;height:200px;margin-top: -125px;color:#e91515"><u>Learn more</u></h3>
+  </div>
+  <br><br><br>
+
+</div> </body>
